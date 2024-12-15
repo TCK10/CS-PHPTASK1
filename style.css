@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: background-image 0.5s ease;
+}
+
+body.default-background {
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.red-background {
+  background: url("red_background.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+body.blue-background {
+  background: url("blue_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.green-background {
+  background: url("green_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  background-color: transparent;
+  padding: 40px;
+  background-color: rgba(170, 170, 170, 0.5);
+  border-radius: 40px;
+  text-align: center;
+  margin: 2.5rem;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+}
+
+#story {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+}
+
+#story p {
+  padding: 0 10rem;
+}
+
+#choices {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.door-button {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.door-button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button-container {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.go-back-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-back-button:hover {
+  background-color: #e0e0e0;
+}
